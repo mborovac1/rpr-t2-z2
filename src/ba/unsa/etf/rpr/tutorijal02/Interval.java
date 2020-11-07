@@ -20,5 +20,19 @@ public class Interval {
         pripadaKrajnja = false;
     }
 
+    public boolean isNull() {
+        return pocetnaTacka == 0 && krajnjaTacka == 0 && pripadaPocetna == false && pripadaKrajnja == false;
+    }
+
+    public boolean isIn(double tacka) {
+        if(pripadaPocetna && !pripadaKrajnja)
+            return tacka >= pocetnaTacka && tacka < krajnjaTacka;
+        else if(pripadaPocetna && pripadaKrajnja)
+            return tacka >= pocetnaTacka && tacka <= krajnjaTacka;
+        else if(!pripadaPocetna && pripadaKrajnja)
+            return tacka > pocetnaTacka && tacka <= krajnjaTacka;
+        else
+            return tacka > pocetnaTacka && tacka < krajnjaTacka;
+    }
 
 }
