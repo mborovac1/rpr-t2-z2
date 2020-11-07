@@ -35,4 +35,50 @@ public class Interval {
             return tacka > pocetnaTacka && tacka < krajnjaTacka;
     }
 
+    public static Interval intersect(Interval i1, Interval i2) {
+        Interval temp = new Interval();
+
+        if(i1.pocetnaTacka < i2.pocetnaTacka && i1.krajnjaTacka < i2.krajnjaTacka) {
+            temp.pocetnaTacka = i2.pocetnaTacka;
+            if(i2.pripadaPocetna)
+                temp.pripadaPocetna = true;
+            else
+                temp.pripadaPocetna = false;
+
+            temp.krajnjaTacka = i1.krajnjaTacka;
+            if(i1.pripadaKrajnja)
+                temp.pripadaKrajnja = true;
+            else
+                temp.pripadaKrajnja = false;
+        }
+        else if(i2.pocetnaTacka < i1.pocetnaTacka && i2.krajnjaTacka < i1.krajnjaTacka) {
+            temp.pocetnaTacka = i1.pocetnaTacka;
+            if(i1.pripadaPocetna)
+                temp.pripadaPocetna = true;
+            else
+                temp.pripadaPocetna = false;
+
+            temp.krajnjaTacka = i2.krajnjaTacka;
+            if(i2.pripadaKrajnja)
+                temp.pripadaKrajnja = true;
+            else
+                temp.pripadaKrajnja = false;
+        }
+        else if(i1.pocetnaTacka < i2.pocetnaTacka && i1.krajnjaTacka > i2.krajnjaTacka) {
+            temp = i2;
+        }
+        else if(i2.pocetnaTacka < i1.pocetnaTacka && i2.krajnjaTacka > i1.krajnjaTacka) {
+            temp = i1;
+        }
+        else if(i1 == i2) {
+            temp = i1;
+        }
+
+        return temp;
+    }
+
+    public Interval intersect(Interval i) {
+        return intersect(this, i);
+    }
+
 }

@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e413409b-5495-44dc-a4ea-eb24a48970b6" name="Default Changelist" comment="Implementirani konstruktori u klasi Interval">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpr-t2-z2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rpr-t2-z2.iml" afterDir="false" />
+    <list default="true" id="e413409b-5495-44dc-a4ea-eb24a48970b6" name="Default Changelist" comment="Implementirana metoda intersect sa jednim i dva parametra">
       <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/tutorijal02/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/tutorijal02/Interval.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604772756058</updated>
-      <workItem from="1604772757103" duration="937000" />
+      <workItem from="1604772757103" duration="2757000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604772893967</created>
@@ -111,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604773167897</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementirane metode isNull i isIn u klasi Interval">
+      <created>1604773772266</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604773772266</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implementirana metoda intersect sa jednim i dva parametra">
+      <created>1604775479326</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604775479326</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,29 +143,31 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Implementirani konstruktori u klasi Interval" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementirani konstruktori u klasi Interval" />
+    <MESSAGE value="Implementirane metode isNull i isIn u klasi Interval" />
+    <MESSAGE value="Implementirana metoda intersect sa jednim i dva parametra" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementirana metoda intersect sa jednim i dva parametra" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1604773037120">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1604774945132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604773037120" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604773643649">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604774945132" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604775337963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604773643649" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604773643648">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604775337963" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604775337963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604773643648" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604773643648">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604775337963" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604775337963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604773643648" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604773643649">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604775337963" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604775337963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604773643649" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604775337963" />
     <state x="664" y="412" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604773360039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
