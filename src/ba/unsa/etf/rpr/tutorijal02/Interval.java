@@ -81,4 +81,33 @@ public class Interval {
         return intersect(this, i);
     }
 
+    @Override
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        if(isNull()) {
+            s.append("()");
+            return String.valueOf(s);
+        }
+        else {
+            if (pripadaPocetna)
+                s.append("[");
+            else
+                s.append("(");
+            s.append(pocetnaTacka + "," + krajnjaTacka);
+            if (pripadaKrajnja)
+                s.append("]");
+            else
+                s.append(")");
+            return String.valueOf(s);
+        }
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Interval) {
+            return pocetnaTacka == ((Interval) obj).pocetnaTacka && krajnjaTacka == ((Interval) obj).krajnjaTacka && pripadaPocetna == ((Interval) obj).pripadaPocetna && pripadaKrajnja == ((Interval) obj).pripadaKrajnja;
+        }
+        else
+            return false;
+    }
 }
